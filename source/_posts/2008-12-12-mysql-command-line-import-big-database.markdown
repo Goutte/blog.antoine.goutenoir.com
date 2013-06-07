@@ -2,7 +2,7 @@
 layout: post
 title: "MySQL ~ Command-line import big database"
 date: 2008-12-12 12:21
-comments: false
+comments: true
 categories:
 - Snippet
 - SQL
