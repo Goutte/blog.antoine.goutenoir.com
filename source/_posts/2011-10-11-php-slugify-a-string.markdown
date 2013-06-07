@@ -22,6 +22,7 @@ Try the following function, which covers less use-cases, but enough sometimes.
 
 
 ``` php Slugify an UTF-8 string using vanilla PHP
+<?php
 /**
  * Returns the slugified (aka urlized) $string,
  * which will match \a-z0-9-\
@@ -66,10 +67,12 @@ function utf8_slugify ($s) {
 This is a hack as-is, neither maintained nor properly unit tested.
 Nowadays, I recommend using _Inflectors_ instead of this function.
 
+<!-- more -->
 
 ## Using iconv
 
 ``` php Slugify a string using PHP and iconv
+<?php
 /**
  * Returns the slugified (aka urlized) $string
  * 
