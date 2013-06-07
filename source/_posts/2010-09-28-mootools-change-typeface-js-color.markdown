@@ -46,11 +46,11 @@ Include the above in your library, and then use it as follows :
 
 ``` javascript Usage example of changeTypefaceColor
 // ASSUMING YOU GOT AN ELEMENT WITH id="mytitle"
-$('mytitle').addEvent ('mouseenter', function(){
-  $('mytitle').changeTypefaceColor ('#FF3399');
+document.id('mytitle').addEvent ('mouseenter', function(){
+  document.id('mytitle').changeTypefaceColor ('#FF3399');
 });
-$('mytitle').addEvent ('mouseleave', function(){
-  $('mytitle').changeTypefaceColor ('#3399FF');
+document.id('mytitle').addEvent ('mouseleave', function(){
+  document.id('mytitle').changeTypefaceColor ('#3399FF');
 });
 ```
 
