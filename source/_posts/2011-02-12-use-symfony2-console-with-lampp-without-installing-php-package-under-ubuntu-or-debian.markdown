@@ -36,3 +36,5 @@ by that one :
 
 
 Of course, if you installed LAMPP somewhere else, replace `/opt/lampp/` by your installation path.
+
+After that, don't use `php app/console`, just `app/console`.

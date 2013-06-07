@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tip ~ Check whether the current PHP file is included or executed"
-date: 2010-11-21 11:21
+date: 2010-10-28 10:28
 comments: true
 categories:
 - PHP
