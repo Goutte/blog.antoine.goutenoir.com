@@ -10,7 +10,7 @@ categories:
 ---
 
 While playing with Symfony (with Doctrine), I twaeked some of their built-in functions that I found useful.
-Slugifying a string for instance, for when you want pretty URIs…
+Slugifying a string for instance, for when you want pretty URIs...
 
 
 ## Without iconv
@@ -67,7 +67,7 @@ function utf8_slugify ($s) {
 This is a hack as-is, neither maintained nor properly unit tested.
 Nowadays, I recommend using _Inflectors_ instead of this function.
 
-<!-- more -->
+<!--more-->
 
 ## Using iconv
 

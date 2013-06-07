@@ -20,7 +20,6 @@ maybe you think LAMPP (v1.7.4 and above have php-5.3.5) should be enough, whatev
 You just need to know where you installed LAMPP (usually `/opt/lampp/`), a text file editor,
 and you’ll be playing with your brand-new symfony2 installation in no time !
 {" LAMPP is useful for beginners "}, but watch out for dragons !
-
 {% endpullquote %}
 
 Open the `console` (or `console_dev`) file, located in the symfony2 `app/` folder, and replace the first line,
