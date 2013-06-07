@@ -1,7 +1,7 @@
 
 ## Todo
 
-- [ ] Convert Pages (10/35)
+- [ ] Convert Pages (12/35)
 - [ ] Google Analytics
 - [ ] GitHub repo
 
