@@ -27,12 +27,15 @@ email: antoine@goutenoir.com
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
 root: /WEBSITES/OCTOPRESS/blog.antoine.goutenoir.com/octopress/public
-permalink: /blog/:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title/
 source: source
 destination: public
 plugins: plugins
 code_dir: downloads/code
-category_dir: blog/categories
+
+archives_dir: archives # unused :'(
+
+category_dir: categories
 markdown: rdiscount
 rdiscount:
   extensions:
@@ -42,7 +45,7 @@ rdiscount:
 pygments: false # default python pygments have been replaced by pygments.rb
 
 paginate: 7          # Posts per page on the blog index
-pagination_dir: blog  # Directory base for pagination URLs eg. /blog/page/2/
+pagination_dir:      # Directory base for pagination URLs eg. /blog/page/2/
 recent_posts: 5       # Posts in the sidebar Recent Posts section
 excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
 
