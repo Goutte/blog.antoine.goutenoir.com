@@ -6,10 +6,6 @@ comments: true
 categories:
 - PHP
 - Code
-- Debian
-- Ubuntu
-- Linux
-- Tips
 
 ---
 

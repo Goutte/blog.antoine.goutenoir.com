@@ -6,6 +6,7 @@ comments: true
 categories:
 - PHP
 - Code
+- Tips
 
 ---
 
