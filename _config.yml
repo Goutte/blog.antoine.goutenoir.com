@@ -3,6 +3,7 @@
 # ----------------------- #
 
 url: http://localhost
+#url: http://antoine.goutenoir.com
 title: Guttulous L∞ps
 subtitle: implementing Undegeekable
 author: Goutte
@@ -27,6 +28,7 @@ email: antoine@goutenoir.com
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
 root: /WEBSITES/OCTOPRESS/blog.antoine.goutenoir.com/octopress/public
+#root: /blog
 permalink: /:year/:month/:day/:title/
 source: source
 destination: public
@@ -53,7 +55,7 @@ titlecase: true       # Converts page and post titles to titlecase
 
 # list each of the sidebar modules you want to include, in the order you want them to appear.
 # To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
-default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html]
+default_asides: [asides/publication_posts.html, asides/recent_posts.html, asides/github.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html]
 
 # Each layout uses the default asides, but they can have their own asides instead. Simply uncomment the lines below
 # and add an array with the asides you want to use.

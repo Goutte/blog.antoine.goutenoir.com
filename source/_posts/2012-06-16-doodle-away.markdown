@@ -6,6 +6,7 @@ comments: true
 categories:
 - Experiment
 - Canvas
+- Publication
 
 ---
 
