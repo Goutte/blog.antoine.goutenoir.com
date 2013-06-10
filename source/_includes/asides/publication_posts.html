@@ -1,12 +1,10 @@
 <section>
   <h1>Publications</h1>
   <ul id="publication_posts">
-    {% for post in site.posts %}
-    {% if post.categories contains 'Publication' %}
+{% for post in site.posts %}{% if post.categories contains 'Publication' %}
       <li class="post">
         <a href="{{ root_url }}{{ post.url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a>
       </li>
-    {% endif %}
-    {% endfor %}
+{% endif %}{% endfor %}
   </ul>
 </section>

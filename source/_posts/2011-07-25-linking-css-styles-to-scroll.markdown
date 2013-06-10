@@ -14,8 +14,8 @@ Crafted with pleasure at Diplomatic Cover.
 {% img center /images/posts/linking-css-styles-to-scroll/ubisoft-driver-trends-website.png 'View Driver Trends Page' 'Driver Trends' %}
 </a>
 
-Read some source code :
+[Visit the website](http://driver-club.uk.ubi.com/xbox/trends),
+or read [some](http://static2.cdn.ubi.com/gametoweb/driver-club/live/09082011/trends/js/common.js)
+[source](http://static2.cdn.ubi.com/gametoweb/driver-club/live/09082011/trends/js/screen.js) code.
 
-- http://static2.cdn.ubi.com/gametoweb/driver-club/live/09082011/trends/js/common.js
-- http://static2.cdn.ubi.com/gametoweb/driver-club/live/09082011/trends/js/screen.js
-
+There's less than 40k of javascript, including libraries and the Ubibar's overhead.

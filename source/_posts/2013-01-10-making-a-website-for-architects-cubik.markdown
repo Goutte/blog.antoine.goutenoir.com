@@ -17,5 +17,3 @@ Crafted with pleasure and designer Joffrey Jochum.
 <a href="http://www.cubik-architecture.com/" target="_blank">
 {% img center /images/posts/making-a-website-for-architects-cubik/cubik-architecture.png 'View Cubik architectural projects' 'Cubik Architecture' %}
 </a>
-
-http://driver-club.uk.ubi.com/xbox/trends
