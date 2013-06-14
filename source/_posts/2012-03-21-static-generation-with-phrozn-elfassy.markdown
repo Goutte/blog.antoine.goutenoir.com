@@ -18,7 +18,7 @@ Crafted with pleasure and designer Joffrey Jochum.
 {% img center /images/publications/elfassybarres.com/screenshot.png 'Visit Elfassy Barrès' 'Screenshot of EB website' %}
 </a>
 
-Review the [**A-grade** benchmark](http://gtmetrix.com/reports/elfassybarres.com/4vxuaQhS) yourself !
+Review the [**A-grade** benchmark](http://gtmetrix.com/reports/elfassybarres.com/4vxuaQhS).
 
 TODO
 ----
