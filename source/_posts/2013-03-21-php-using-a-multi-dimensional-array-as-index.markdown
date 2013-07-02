@@ -169,7 +169,7 @@ assertEquals(array(), $ma, "Always leave the root array");
 
 index_remove($ma, array('?','¿'));
 assertEquals(array(), $ma, "Silently ignore not found");
-// should it ? or shoud it throw like a greek discobole ?
+// should it ? or should it throw like a greek discobole ?
 
 
 ```
