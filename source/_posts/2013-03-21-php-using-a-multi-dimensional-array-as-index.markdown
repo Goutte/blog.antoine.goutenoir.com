@@ -159,7 +159,7 @@ $ma = array(
 
 index_remove($ma, array('b','c'));
 
-assertNull(Index::get($ma, array('b','c')), "Remove value");
+assertNull(index_get($ma, array('b','c')), "Remove value");
 assertCount(1, $ma, "Remove empty array(s)");
 
 index_remove($ma, array('a',0));
