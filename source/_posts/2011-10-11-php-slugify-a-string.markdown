@@ -9,7 +9,7 @@ categories:
 
 ---
 
-While playing with Symfony (with Doctrine), I twaeked some of their built-in functions that I found useful.
+While playing with Symfony (with Doctrine), I tweaked some of their built-in functions that I found useful.
 Slugifying a string for instance, for when you want pretty URIs...
 
 
