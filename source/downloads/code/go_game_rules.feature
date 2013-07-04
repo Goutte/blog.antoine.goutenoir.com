@@ -1,4 +1,7 @@
 
+# █ = black stone
+# ▒ = white stone
+
 Feature: Enforcing the game rules
   In order to be honorable
   As a go player
@@ -6,7 +9,7 @@ Feature: Enforcing the game rules
 
   Background:
     Given I am white in a game of size 3
-      And it is my turn
+    And it is my turn
 
 
   Scenario: Suicide
@@ -55,7 +58,7 @@ Feature: Enforcing the game rules
   |   |   |
 """
     Then the game should reject my move
-     And it should still be my turn
+    And it should still be my turn
 
 
 
@@ -69,7 +72,29 @@ Feature: Enforcing the game rules
   |   |   |
 --▒--- ---▒--
   |   |   |   |   |   |   |   |   |   |   |   |
--- ---▒--- --- --- --- --- --- --- --- --- --- --
+-- --- --- --- --- --- --- --- --- --- --- --- --
+  |   |   |   |   |   |   |   |   |   |   |   |
+-- --- --- --- --- --- --- --- --- --- --- --- --
+  |   |   |   |   |   |   |   |   |   |   |   |
+-- --- --- --- --- --- --- --- --- --- --- --- --
+  |   |   |   |   |   |   |   |   |   |   |   |
+-- --- --- --
+  |   |   |
+-- --- --- --
+  |   |   |
+-- --- --- --
+  |   |   |
+"""
+    When white plays on the X :
+"""
+  |   |   |
+-- ---█--- --
+  |   |   |
+--█---▒---█--
+  |   |   |
+--▒--- ---▒--
+  |   |   |   |   |   |   |   |   |   |   |   |
+-- ---X--- --- --- --- --- --- --- --- --- --- --
   |   |   |   |   |   |   |   |   |   |   |   |
 -- --- --- --- --- --- --- --- --- --- --- --- --
   |   |   |   |   |   |   |   |   |   |   |   |
@@ -104,7 +129,7 @@ Feature: Enforcing the game rules
 -- --- --- --
   |   |   |
 """
-    And then white plays on the X :
+    And then white tries to play on the X :
 """
   |   |   |
 -- ---█--- --
@@ -126,37 +151,15 @@ Feature: Enforcing the game rules
 -- --- --- --
   |   |   |
 """
-    And then black plays on the X :
-"""
-  |   |   |
--- ---█--- --
-  |   |   |
---█---▒---█--
-  |   |   |
---▒---X---▒--
-  |   |   |   |   |   |   |   |   |   |   |   |
--- ---▒--- --- --- --- --- --- --- --- --- --- --
-  |   |   |   |   |   |   |   |   |   |   |   |
--- --- --- --- --- --- --- --- --- --- --- --- --
-  |   |   |   |   |   |   |   |   |   |   |   |
--- --- --- --- --- --- --- --- --- --- --- --- --
-  |   |   |   |   |   |   |   |   |   |   |   |
--- --- --- --
-  |   |   |
--- --- --- --
-  |   |   |
--- --- --- --
-  |   |   |
-"""
     Then the game should reject the move
-     And the game should look like this :
+    And the game should look like this :
 """
   |   |   |
 -- ---█--- --
   |   |   |
---█---▒---█--
+--█--- ---█--
   |   |   |
---▒--- ---▒--
+--▒---█---▒--
   |   |   |   |   |   |   |   |   |   |   |   |
 -- ---▒--- --- --- --- --- --- --- --- --- --- --
   |   |   |   |   |   |   |   |   |   |   |   |
