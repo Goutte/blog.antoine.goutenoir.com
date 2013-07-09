@@ -2,10 +2,15 @@
 # █ = black stone
 # ▒ = white stone
 
+#Feature: Fair play
+#  In order to be honorable
+#  As a go player
+#  I will respect the rules
+
 Feature: Enforcing the game rules
-  In order to be honorable
-  As a go player
-  I will respect the rules
+  In order to be fair
+  As a referee
+  I will enforce the game rules
 
   Background:
     Given I am white in a game of size 3
