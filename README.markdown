@@ -1,14 +1,20 @@
 
+This is simply one of the many octopress blogs out there.
+
+Its main purpose is to be a miscellaneous memo, but apparently it also doubles as a vanity card.
 
 
-## Todo
+## Todo (no deadline)
 
-- [ ] Convert Pages (12/35)
-- [ ] Google Analytics
-- [ ] GitHub repo
-- [ ] Make config work on both dev & prod envs
+```
+- [ ] Make config detect dev or prod envs
+- [ ] Enhance markdown with math expressions
+- [ ] Enhance markdown with `/!\` and `(i)` paragraphs
+```
 
 ## Documentation
 
-Use `bundle exec rake ...` instead of just `rake ...` to dodge ruby versions problems.
+Source files (posts, pages, images, custom html/css) reside in `source`.
+
+Public generated files reside in `public`.
 

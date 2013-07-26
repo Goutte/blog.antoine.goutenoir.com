@@ -1,7 +1,4 @@
 
-# █ = black stone
-# ▒ = white stone
-
 #Feature: Fair play
 #  In order to be honorable
 #  As a go player
@@ -14,6 +11,8 @@ Feature: Enforcing the game rules
 
   Background:
     Given I am white in a game of size 3
+    And the symbol for a black stone is █
+    And the symbol for a white stone is ▒
     And it is my turn
 
 
