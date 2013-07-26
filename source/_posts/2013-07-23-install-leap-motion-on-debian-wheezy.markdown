@@ -26,7 +26,7 @@ THE PROCESS
 
 Grab the [LEAP Linux SDK](https://developer.leapmotion.com/downloads), un-tar it, and try to install :
 
-``` OH NOES
+``` bash OH NOES
 $ sudo dpkg -i Leap-0.8.0-x64.deb 
 Sélection du paquet leap précédemment désélectionné.
 (Lecture de la base de données... 146662 fichiers et répertoires déjà installés.)
@@ -52,14 +52,14 @@ APT-PINNING
 
 Append `testing` to your sources :
 
-``` /etc/apt/sources.list
+``` text /etc/apt/sources.list
 ## testing          
 deb http://ftp.debian.org/debian testing main contrib non-free
 ```
 
 Give `testing` a priority of 300, which is more than installed packages (100) but less than stable (400) :
 
-``` /etc/apt/preferences.d/testing (new file)
+``` text /etc/apt/preferences.d/testing (new file)
 Package: *
 Pin: release o=Debian,a=testing
 Pin-Priority: 300
@@ -67,14 +67,14 @@ Pin-Priority: 300
 
 Now, we need to politely ask aptitude to resolve dependencies using `testing` :
 
-```
+``` bash
 $ sudo aptitude -f install
 ```
 
 It will propose multiple solutions to resolve the dependencies.
-Refuse them until it suggests installing `libc6` from `testing`.
+**Refuse them until it suggests installing `libc6` from `testing`.**
 
-Accepting this solution made it (on my machine) remove the following packages :
+On my machine, it was the third solution, and it removed the following packages :
 
 ```
 Les paquets suivants seront ENLEVÉS : 
@@ -83,9 +83,11 @@ Les paquets suivants seront ENLEVÉS :
   sox{u} valgrind{a} valgrind-dbg{a} 
 ```
 
+I'm unsure of the consequences of the removal of these packages, _so tread carefully._
+
 But then, victory was at hand !
 
-```
+``` text
 Leap Motion daemon and applications installed under /usr/bin/
 Allow Leap Motion in the system tray with the following command:
   gsettings set com.canonical.Unity.Panel systray-whitelist "$(gsettings get com.canonical.Unity.Panel systray-whitelist | sed -e "s/]$/, 'LeapControlPanel']/")"
@@ -101,7 +103,7 @@ And:
 
 Now, you too can *feel like an epileptic gorilla trying to grab a stroboscopic e-banana* !
 
-{% img center /images/posts/install-leap-motion-on-debian-wheezy/leap-gorilla-syndrom.jpg 'Angry gorilla trying early motion capture' %}
+{% img center /images/posts/install-leap-motion-on-debian-wheezy/leap-gorilla-syndrom.jpg Angry gorilla trying early motion capture %}
 
 
 [^1]: see http://packages.debian.org/search?keywords=libc6
