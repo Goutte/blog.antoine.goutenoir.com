@@ -27,7 +27,8 @@ THE PROCESS
 Grab the [LEAP Linux SDK](https://developer.leapmotion.com/downloads), un-tar it, and try to install :
 
 ``` bash OH NOES
-$ sudo dpkg -i Leap-0.8.0-x64.deb 
+$ sudo dpkg -i Leap-0.8.0-x64.deb
+
 Sélection du paquet leap précédemment désélectionné.
 (Lecture de la base de données... 146662 fichiers et répertoires déjà installés.)
 Dépaquetage de leap (à partir de Leap-0.8.0-x64.deb) ...
@@ -104,6 +105,33 @@ And:
 Now, you too can *feel like an epileptic gorilla trying to grab a stroboscopic e-banana* !
 
 {% img center /images/posts/install-leap-motion-on-debian-wheezy/leap-gorilla-syndrom.jpg Angry gorilla trying early motion capture %}
+
+---
+
+HEY, IT'S BUGGY !
+-----------------
+
+**Yes.** It appears `leapd` is quite unstable in its current version (0.8.0).
+
+On my machine, it randomly stops responding, with no meaningful `dmesg` log.
+
+If you get the following error message, it means that `leapd` is still running :
+
+```
+[Critical] WebSocket exception: bind: Address already in use
+```
+
+You can check this using `ps -A | grep leapd`.
+
+Most of the time, `leapd` cannot be terminated anymore with `SIGTERM`, so use `SIGKILL` :
+
+``` bash ...sigh...
+$ killall leapd -s SIGKILL
+```
+
+---
+
+I'll keep updating this post as my _leap-fu_ gets better.
 
 
 [^1]: see http://packages.debian.org/search?keywords=libc6
