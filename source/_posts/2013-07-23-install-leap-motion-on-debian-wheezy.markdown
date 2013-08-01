@@ -5,12 +5,13 @@ comments: true
 categories:
 - LEAP
 - Linux
+- Debian
 
 ---
 
 My #firstLEAP experience, despite being somewhat frustrating after a year and half
 of increasingly feverish expectations, proved to me one simple point :
-**I had to get this to work under Debian.**
+**I had to get this to work under my linux development environment.**
 
 WAIT, WHAT ?
 ------------
@@ -24,7 +25,7 @@ WAIT, WHAT ?
 THE PROCESS
 -----------
 
-Grab the [LEAP Linux SDK](https://developer.leapmotion.com/downloads), un-tar it, and try to install :
+[Grab](https://developer.leapmotion.com/downloads) the LEAP Linux SDK, un-tar it, and try to install :
 
 ``` bash OH NOES
 $ sudo dpkg -i Leap-0.8.0-x64.deb
@@ -48,8 +49,8 @@ A backport of the `leap` package is not an option, as its source is closed and t
 
 No worries, `libc6` is available in version 2.17-7 in jessie[^1], so we're going to pin the hell out of it !
 
-APT-PINNING
------------
+THE SOLUTION
+------------
 
 Append `testing` to your sources :
 
@@ -58,7 +59,7 @@ Append `testing` to your sources :
 deb http://ftp.debian.org/debian testing main contrib non-free
 ```
 
-Give `testing` a priority of 300, which is more than installed packages (100) but less than stable (400) :
+[OPTIONAL] Give `testing` a priority of 300, which is more than installed packages (100) but less than stable (400) :
 
 ``` text /etc/apt/preferences.d/testing (new file)
 Package: *
@@ -102,9 +103,13 @@ And:
   LeapControlPanel
 ```
 
+
+
 Now, you too can *feel like an epileptic gorilla trying to grab a stroboscopic e-banana* !
 
 {% img center /images/posts/install-leap-motion-on-debian-wheezy/leap-gorilla-syndrom.jpg Angry gorilla trying early motion capture %}
+
+**Advertisement** : you can try Cyx, a [LEAP-enabled WebGL and HTML5 game](http://antoine.goutenoir.com/games/cyx).
 
 ---
 
