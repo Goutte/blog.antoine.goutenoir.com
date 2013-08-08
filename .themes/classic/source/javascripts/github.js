@@ -3,10 +3,11 @@ var github = (function(){
     return $('<div/>').text(str).html();
   }
   function render(target, repos){
-    var i = 0, fragment = '', t = $(target)[0];
+    var i = 0, name='', fragment = '', t = $(target)[0];
 
     for(i = 0; i < repos.length; i++) {
-      fragment += '<li><a href="'+repos[i].html_url+'">'+repos[i].name+'</a><p>'+escapeHtml(repos[i].description||'')+'</p></li>';
+      name = repos[i].name
+      fragment += '<li><a href="'+repos[i].html_url+'"><span data-hover="'+name+'">'+name+'</span></a><p>'+escapeHtml(repos[i].description||'')+'</p></li>';
     }
     t.innerHTML = fragment;
   }

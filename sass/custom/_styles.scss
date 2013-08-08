@@ -8,3 +8,145 @@ a.discreet {
 .centered {
   text-align: center;
 }
+
+
+
+// CSS3 LINKS
+
+*,
+*:after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// ARTICLE TITLE LINK
+
+h1.entry-title a {
+  position: relative;
+  display: inline-block;
+  outline: none;
+  text-decoration: none;
+}
+
+h1.entry-title a:hover,
+h1.entry-title a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+h1.entry-title a {
+  padding: 0 0 10px;
+}
+
+h1.entry-title a::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: lighten($link-color-hover,10);
+  content: '';
+  opacity: 0;
+  -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  -moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+  transition: height 0.3s, opacity 0.3s, transform 0.3s;
+  -webkit-transform: translateY(-16px);
+  -moz-transform: translateY(-16px);
+  transform: translateY(-16px);
+}
+
+h1.entry-title a:hover::after,
+h1.entry-title a:focus::after {
+  height: 4px;
+  opacity: 1;
+  -webkit-transform: translateY(-6px);
+  -moz-transform: translateY(-6px);
+  transform: translateY(-6px);
+}
+
+
+// GITHUB REPOS
+
+#gh_repos a {
+  position: relative;
+  display: inline-block;
+  outline: none;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+#gh_repos a:hover,
+#gh_repos a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+#gh_repos a {
+  line-height: 2em;
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  perspective: 800px;
+}
+
+#gh_repos a span {
+  position: relative;
+  display: inline-block;
+  padding: 3px 15px 0;
+  //color: $link-color;
+  background: lighten($sidebar-bg,50);
+  text-shadow: none;
+  box-shadow: inset 0 2px darken($sidebar-bg, 21);
+  -webkit-transition: background 0.6s;
+  -moz-transition: background 0.6s;
+  transition: background 0.6s;
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 0% 50%;
+  -moz-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+}
+
+#gh_repos a span::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  padding: 3px 15px 0;
+  background: $link-color;
+  color: $sidebar-bg;
+
+  text-shadow: none;
+
+  content: attr(data-hover);
+  -webkit-transform: rotateX(270deg);
+  -moz-transform: rotateX(270deg);
+  transform: rotateX(270deg);
+  -webkit-transition: -webkit-transform 0.6s;
+  -moz-transition: -moz-transform 0.6s;
+  transition: transform 0.6s;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  transform-origin: 0 0;
+  pointer-events: none;
+}
+
+#gh_repos a:hover span,
+#gh_repos a:focus span {
+  background: darken($sidebar-bg,50);
+  color: lighten($sidebar-bg,50);
+}
+
+#gh_repos a:hover span::before,
+#gh_repos a:focus span::before {
+  -webkit-transform: rotateX(10deg);
+  -moz-transform: rotateX(10deg);
+  transform: rotateX(10deg);
+}
