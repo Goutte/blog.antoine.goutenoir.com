@@ -11,6 +11,7 @@ categories:
 ---
 
 Very light, very fast, highly responsive, generated using [Phrozn][].
+It's also using twitter 1.1 OAuth'd API to get the homepage feed.
 
 Crafted with pleasure and designer Joffrey Jochum.
 
@@ -18,12 +19,6 @@ Crafted with pleasure and designer Joffrey Jochum.
 {% img center /images/publications/elfassybarres.com/screenshot.png 'Visit Elfassy Barrès' 'Screenshot of EB website' %}
 </a>
 
-Review the [**A-grade** benchmark](http://gtmetrix.com/reports/elfassybarres.com/4vxuaQhS).
-
-TODO
-----
-
-- Minify mootools libs
-- What happened to the favicon ?
+Review the [**A-grade** benchmark](http://gtmetrix.com/reports/elfassybarres.com/qfQl4Hyp).
 
 [Phrozn]: http://www.phrozn.info

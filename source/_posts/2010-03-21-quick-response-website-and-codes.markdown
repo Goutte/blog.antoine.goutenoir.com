@@ -28,6 +28,6 @@ Supports Internationalization and Localization (I18N & L10N).<br>
 </a>
 
 <br>
-Review the [**A-grade** benchmark](http://gtmetrix.com/reports/www.qrok.me/w7D7r3lT) yourself !
+Review the [**A-grade** benchmark](http://gtmetrix.com/reports/www.qrok.me/5A8LIIF0) yourself !
 
 _Full disclosure : <br>sales@qrok.me goes into my inbox._
