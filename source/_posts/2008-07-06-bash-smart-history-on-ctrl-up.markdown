@@ -17,5 +17,6 @@ Create this file :
 ```
 
 Launch new terminal, start typing, hit <big>`ctrl`+`↑`</big>.
+On some systems, I had to reboot, because sourcing the file was not enough. No idea as to why.
 
 

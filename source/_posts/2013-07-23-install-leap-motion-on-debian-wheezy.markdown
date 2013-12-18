@@ -9,6 +9,10 @@ categories:
 
 ---
 
+**Update** : [LEAP Motion now supports Linux](https://www.leapmotion.com/setup/linux), so this post is pretty much obsolete.
+
+---
+
 My #firstLEAP experience, despite being somewhat frustrating after a year and half
 of increasingly feverish expectations, proved to me one simple point :
 **I had to get this to work under my linux development environment.**
