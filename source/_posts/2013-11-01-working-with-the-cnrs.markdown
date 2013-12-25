@@ -21,5 +21,3 @@ We'll be using this data to study galaxies, galactic winds, and overall for _ser
 
 {% video http://www.youtube.com/watch?v=e5TopF7DGMg %}
 
-
-{# Au final, la recherche du classicisme est un travail intéressant, une véritable étude sociologique sur les règles informelles et françaises du conformisme et de la bienséance. #}
