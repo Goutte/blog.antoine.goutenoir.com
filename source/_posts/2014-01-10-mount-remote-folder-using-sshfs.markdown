@@ -20,6 +20,10 @@ Then, you can mount :
 
   sshfs antoine@remote_host:/path/to/directory /path/to/local/mount/point
 
+Add your public key (with an empty password, if you dare) to the server's `~/.ssh/authorized_keys`, and you're ready to add a line to `/etc/fstab` :
+
+  sshfs#antoine@remote_host:/path/to/directory /path/to/local/mount/point fuse user 0 0
+
 ---
 
 See [the original article on xmodulo](http://xmodulo.com/2013/04/how-to-mount-remote-directory-over-ssh-on-linux.html) for more information.
