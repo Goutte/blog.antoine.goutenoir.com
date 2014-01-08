@@ -14,7 +14,7 @@ We could do `self.assertTrue(math.isnan(value))`, but it will raise a `TypeError
 
 And when we want to assert that a value is not `nan` using `self.assertFalse(math.isnan(value))`, it is a problem.
 
-It's an interesting question actually : does "not not a number" needs to be a number or just not `nan` ? It's a matter of taste, I think.
+It's an interesting question actually : does "not `nan`" needs to be a number or just not `nan` ? It's a matter of taste, I think.
 The following could be improved with a `strict` parameter to accord to all tastes (right now, it's strict), but here it is :
 
 ``` python numeric_assertions.py
