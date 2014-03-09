@@ -2,13 +2,20 @@
 layout: post
 title: "Python tips for scientists"
 comments: true
-published: false
+published: true
 categories:
 - Python
 ---
 
 ## Zen of Python
 
+Just type :
+
+``` python
+import this
+```
+
+in ipython, or any other python console.
 
 
 ## Idioms
@@ -26,7 +33,7 @@ Simply put :
   - `is` is an _identity_ comparator.
   - `==` is an _equality_ comparator.
 
-Most of the time (including with string and integers), you want to use `==` instead of `is`.
+Most of the time (including with string and integers), you want to use `==` instead of `is`, unless you're comparing with `None`.
 
 Just look at the following pitfalls :
 
@@ -89,7 +96,7 @@ from __future__ import division
 ```
 
 The modern python always returns the expected result on a regular `/` division,
-and requires you to explicitly use `//` for euclidian division.
+and you can still explicitly use `//` for euclidian division.
 
 {% blockquote %}
 Explicit is better than implicit.
