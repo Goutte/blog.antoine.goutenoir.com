@@ -10,5 +10,5 @@ categories:
 
 On m'a demandé un C.V. plus "classique".
 
-La recherche du classicisme dans le C.V. est un travail intéressant et révélateur,
+La recherche du "classicisme" dans le C.V. est un travail intéressant et révélateur,
 une véritable étude sociologique sur les règles informelles et françaises du conformisme et de la bienséance.

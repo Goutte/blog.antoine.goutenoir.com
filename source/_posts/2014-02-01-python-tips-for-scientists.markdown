@@ -91,8 +91,9 @@ but has been added to more recent versions of python. A good example of this is 
 ``` python
 from __future__ import division
 
-1 / 2   # => 0.5
-1 // 2  # => 0
+1 / 2.0  # => 0.5
+1 / 2    # => 0.5
+1 // 2   # => 0
 ```
 
 The modern python always returns the expected result on a regular `/` division,
