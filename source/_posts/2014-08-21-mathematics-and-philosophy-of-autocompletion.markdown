@@ -17,6 +17,6 @@ This is a shameless hack of the above to peep into the human collective mind abo
 {% img center /images/posts/mathematics-and-philosophy-of-autocompletion/philosophy_of.png 'Philosophy of' 'Philosophy of' %}
 
 It's sad to realize that money is half the drive for mathematics, but it's refreshing to see music in there too.
-Our [favorite mathemusician](www.youtube.com/user/Vihart) would be pleased, I'm sure.
+Our [favorite mathemusician](http://www.youtube.com/user/Vihart) would be pleased, I'm sure.
 
 Try these yourself, see if/how they evolved with time !

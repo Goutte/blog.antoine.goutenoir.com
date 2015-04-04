@@ -7,6 +7,9 @@ categories:
 - Dart
 ---
 
+
+## A convoluted way
+
 I did not find this on the Internet, so here it is :
 
 ``` dart
@@ -31,12 +34,31 @@ Pretty useful when you have class wrapping a Map, like this :
 class MyIterableClass extends IterableBase {
 
   Map myInternalMap;
-  
+
   get iterator => new MapValuesIterator(myInternalMap);
-  
+
   // ...
 
 }
 ```
 
-Note: this may not be the right way of doing things, copy/paste with caution.
+## A better way
+
+Of course, you can simply do :
+
+``` dart
+class MyIterableClass extends IterableBase {
+
+  Map myInternalMap;
+
+  get iterator => myInternalMap.values.iterator;
+
+  // ...
+
+}
+```
+
+Which is better. Much better.
+
+
+
