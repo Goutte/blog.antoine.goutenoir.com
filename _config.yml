@@ -9,6 +9,8 @@ author: Goutte
 simple_search: http://google.com/search
 description:
 
+excerpt_separator: ""   # Workaround for http://blog.slaks.net/2013-08-09/jekyll-tag-was-never-closed
+
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
 # http://www.ruby-doc.org/core-1.9.2/Time.html#method-i-strftime
@@ -44,8 +46,8 @@ rdiscount:
     - footnotes
     - smart
 
-highlighter: pygments
-pygments: false # default python pygments have been replaced by pygments.rb
+highlighter: null # The allowed values are 'rouge', 'pygments' or null.
+# pygments: false # using the `highlighter` setting instead
 
 paginate: 7          # Posts per page on the blog index
 pagination_dir:      # Directory base for pagination URLs eg. /blog/page/2/
