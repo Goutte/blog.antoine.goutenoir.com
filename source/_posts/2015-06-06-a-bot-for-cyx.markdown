@@ -20,7 +20,7 @@ You can only play it against a friend or against the computer.
 I had made a dumb computer player on purpose, with probabilities of skipping good decisions and limited board analysis.
 Some players found it much too easy and asked for a smarter bot to play against.
 
-It is actually much easier to make a smart computer player than it is to make a fun computer player.
+It is actually much _easier_ to make a _smart_ computer player than it is to make a _fun_ computer player.
 
 Below is the code of the bot of the _Expert_ solo mode.
 
@@ -35,13 +35,13 @@ Then, pick a random tile amongst the ones with the highest incentive.
 Options :
 - game: required, an instance of Cyx.Game
 ###
-class Cyx.Player.SimpleBot extends Cyx.Player.Base
+class Cyx.Player.SimpleBot extends Cyx.Player.Bot
 
   constructor: (@game) ->
 
   ###
   Returns the tile on which the bot wants to play, or undefined if it does not
-  want to play on anything, usually because it is the opening move.
+  want to play on anything, usually because there is no free tile left to play.
   ###
   play: (lattice) ->
 
@@ -77,4 +77,6 @@ class Cyx.Player.SimpleBot extends Cyx.Player.Base
     willK[GMF.Util.getRandomArrayValue(best)]
 ```
 
+If you cannot beat it, ponder on the fact that the code is 50 lines long...
 
+Like every game maker, I enjoy the bitter tears of my players ! ;)
