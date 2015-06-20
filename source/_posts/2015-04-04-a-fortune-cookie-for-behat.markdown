@@ -5,13 +5,17 @@ comments: true
 published: true
 categories:
   - PHP
+
 ---
 
 
-{% blockquote %}
-Your compliance with all terms and conditions,
-expressed and implied, is automatic upon viewing.
+{% blockquote fortune %}
+A lost ounce of gold may be found,
+a lost moment of time never.
 {% endblockquote %}
+
+When you run `bin/behat` and everything is green, you only get the warm fuzzy feeling of a work well done.
+Why not reward yourself a bit more ?
 
 Some show Chuck Norris giving the thumbs-up.
 
@@ -19,17 +23,9 @@ Some show half-naked pin-ups.
 
 Most don't show anything special.
 
-{% blockquote %}
-A lost ounce of gold may be found,
-a lost moment of time never.
-{% endblockquote %}
-
-But when you run `bin/behat` and everything is green, you get the warm fuzzy
-feeling of a work well done. Why not reward ourselves a bit more ?
-
 Enters the `fortune` cookie.
 
-{% blockquote %}
+{% blockquote fortune %}
 To be sure of hitting the target, shoot first
 and, whatever you hit, call it the target.
 {% endblockquote %}
@@ -44,7 +40,7 @@ public static function afterTheSuite(AfterSuiteScope $scope)
 {
     // Let's make a meme : a fortune cookie each time the suite runs okay
     if ($scope->getTestResult()->isPassed()) {
-	try { print(shell_exec('fortune')); } catch (\Exception $e) {}
+	try { print(shell_exec('fortune -a')); } catch (\Exception $e) {}
     }
 }
 ```

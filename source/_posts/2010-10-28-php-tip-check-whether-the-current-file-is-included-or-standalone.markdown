@@ -34,7 +34,6 @@ if ( !isIncluded() ) {
 if ( __FILE__ != $_SERVER['SCRIPT_FILENAME'] ) {
     // this file is being included
 }
-
 ```
 
 The interesting function used here is [`get_included_files()`](http://www.php.net/manual/en/function.get-included-files.php).

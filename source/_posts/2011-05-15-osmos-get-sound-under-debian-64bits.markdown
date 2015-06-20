@@ -15,7 +15,6 @@ Fresh install, no sound.
 Launched `/opt/Osmos/Osmos` :
 
 ```
-—————————————————————————————————-
 Commandline: ./Osmos.bin64
 Preinitializing game: HEMI version 1.6.1 1568
 Localization: using language “fr”
@@ -47,7 +46,6 @@ Failed to open device
 WARNING: Failed to initialize OpenAL
 App exiting — bye!
 Writing config to Config.cfg
-—————————————————————————————————-
 ```
 
 The problem is `WARNING: Failed to initialize OpenAL`.

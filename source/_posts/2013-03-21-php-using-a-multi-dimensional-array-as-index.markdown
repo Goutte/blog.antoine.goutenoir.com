@@ -175,7 +175,7 @@ assertEquals(array(), $ma, "Silently ignore not found");
 ```
 
 
------
+---
 
 I dabbled a bit with the OO approach of this, too.
 It needs more research, and I like the functional programming approach.

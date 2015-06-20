@@ -104,7 +104,7 @@ function slugify_with_iconv ($string)
 }
 ```
 
------
+---
 
 _This has Not (been) Invented Here (mostly), and the proper keyword you should be looking for is **Inflector**._
 

@@ -30,7 +30,6 @@ It’s quite useful for styling, if you want to add a CSS file only for a certai
 <?php if ( Browser::isIpad() || Browser::isIphone() ): ?>
     <link rel="stylesheet" href="style/css/apple_mobile.css" />
 <?php endif; ?>
-
 ```
 
 
