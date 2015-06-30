@@ -9,7 +9,17 @@ a.discreet {
   text-align: center;
 }
 
+// GOOGLE SEARCH
 
+#google_search_form {
+  padding-top: 4px;
+}
+
+// FIX OVER-LARGE TOP PADDING
+
+article header {
+  padding-top: 0;
+}
 
 // CSS3 LINKS
 
