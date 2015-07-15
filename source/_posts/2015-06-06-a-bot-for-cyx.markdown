@@ -15,7 +15,7 @@ bunch of times), I made [Cyx](http://antoine.goutenoir.com/games/cyx).
 It's been highlighted [in the Chrome Webstore](https://chrome.google.com/webstore/detail/cyx/gppkphoaidmofdbcdnhlmanhgodbfmnj) lately,
 and since then thousands of players try it every day.
 
-You can only play it against a friend or against the computer.
+You can only play it against a local friend or against the computer.
 
 I had made a dumb computer player on purpose, with probabilities of skipping good decisions and limited board analysis.
 Some players found it much too easy and asked for a smarter bot to play against.
@@ -59,7 +59,7 @@ class Cyx.Player.SimpleBot extends Cyx.Player.Bot
           # But make sure we prioritize instant winning if it is available
           if shape.remain.length == 1 && move.player == this then will *= 2
           if not willK[tile] then willK[tile] = tile
-          if not willV[tile] then willV[tile] = 1 else willV[tile] += will
+          if not willV[tile] then willV[tile] = will else willV[tile] += will
 
     # Either it is the opening move or there is nowhere to play.
     # As the AI never opens the game and the game ends when there are no free
