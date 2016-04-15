@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Bash smart history on CTRL+UP"
+title: "Bash smart history on UP"
 comments: true
 categories:
 - Linux
@@ -8,15 +8,25 @@ categories:
 
 ---
 
+You can either edit your `~/.bashrc` :
 
-Create this file :
-
-``` bash ~/.inputrc
-"\e[1;5A": history-search-backward
-"\e[1;5B": history-search-forward
+``` bash ~/.bashrc
+if [[ $- == *i* ]]
+then
+    bind '"\e[A": history-search-backward'
+    bind '"\e[B": history-search-forward'
+fi
 ```
 
-Launch new terminal, start typing, hit <big>`ctrl`+`↑`</big>.
-On some systems, I had to reboot, because sourcing the file was not enough. No idea as to why.
+or create a `~/.inputrc` file :
+
+``` bash ~/.inputrc
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+```
+
+Launch a new terminal, start typing, hit <big>`↑`</big>, and enjoy !
+
+This is the kind of shortcut whose existence you forget about and are painfully reminded of when you use someone else's terminal !
 
 
