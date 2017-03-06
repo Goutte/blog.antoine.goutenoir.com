@@ -41,7 +41,7 @@ public static function afterTheSuite(AfterSuiteScope $scope)
 {
     // Let's make a meme : a fortune cookie each time the suite runs okay
     if ($scope->getTestResult()->isPassed()) {
-	try { print(shell_exec('fortune -a')); } catch (\Exception $e) {}
+        try { print(shell_exec('fortune -a')); } catch (\Exception $e) {}
     }
 }
 ```
